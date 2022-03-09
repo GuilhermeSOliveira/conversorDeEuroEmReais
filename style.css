@@ -24,7 +24,7 @@ header, main {
     margin: 10px;
 }
 
-#resultado {
+#resultado, #resultadoBitcoin {
     text-align: center;
     color: #B69F07;
 }
