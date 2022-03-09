@@ -1,0 +1,30 @@
+body {
+    font-family: 'Russo One', sans-serif;
+    background: #67837E;
+}
+
+header, main {
+    text-align: center;
+    color: #B6C068;
+}
+
+#Conversor {
+    margin: 10px 0;
+    padding: 2px 4px;
+    border: 2px solid;
+    border-radius: 5px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.Botao {
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Russo One', sans-serif;
+    margin: 10px;
+}
+
+#resultado {
+    text-align: center;
+    color: #B69F07;
+}
