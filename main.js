@@ -1,14 +1,32 @@
 function Converter(){
 
-    let valorEuro = document.querySelector('#conversor');
-    let valor = valorEuro.value;
-    let euroHoje = 5.52;
-    let bitcoinHoje = 35948.94;
-    let valorEmReais = valor * euroHoje;
-    let valorEmBitcoin = valor / bitcoinHoje;
+    let valorInserido = document.querySelector('#conversor');
+    let valor = valorInserido.value;
+    let valorEmReais = valor;
+    let euro = valorEmReais * 5.52;
+    let dolar = valorEmReais * 5.08;
+    let libras = valorEmReais * 6.62;
+    let bitcoin = valorEmReais / 35948.94;
     
-    document.querySelector('#resultado').innerHTML = `$ ${valorEmReais.toFixed(2)}`;
-    document.querySelector('#resultadoBitcoin').innerHTML = `&#8383; ${valorEmBitcoin.toFixed(5)}`;
 
-    console.log(valorEmReais);
+    const moeda = document.getElementsByName("radioInput");
+
+
+    if (moeda[0].checked) {
+       valorEmReais = dolar;
+    }else if (moeda[1].checked) {
+        valorEmReais = euro;
+    }else if (moeda[2].checked) {
+        valorEmReais = libras;
+    }else if (moeda[3].checked) {
+        valorEmReais = bitcoin;
+    }
+
+    console.log(valorEmReais)   
+
+    if (valorEmReais == bitcoin){
+        document.querySelector('#resultado').innerHTML = `R$ ${valorEmReais.toFixed(5)}`;
+    }else{
+        document.querySelector('#resultado').innerHTML = `R$ ${valorEmReais.toFixed(2)}`;
+    }
 }
