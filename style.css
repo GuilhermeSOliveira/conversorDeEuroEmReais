@@ -1,16 +1,18 @@
 body {
     font-family: 'Russo One', sans-serif;
     background: #67837E;
+    -webkit-text-stroke: 0.5px #000;
 }
 
 header, main {
     text-align: center;
     color: #B6C068;
+    margin: 10px 0;
 }
 
-#Conversor {
+#conversor {
     margin: 10px 0;
-    padding: 2px 4px;
+    padding: 4px 4px;
     border: 2px solid;
     border-radius: 5px;
     font-family: 'Russo One', sans-serif;
